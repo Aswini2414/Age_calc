@@ -1,38 +1,260 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+html{
+  font-size:62.5%;
+  background-color:#f1f3f5;
+  font-family: 'Poppins', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.main_container{
+  position:absolute;
+  top:50%;
+  left:50%;
+  width:50%;
+  height:70%;
+  transform:translate(-50%,-50%);
+  background-color:#FFFFFF;
+  border-radius:3rem 3rem 15rem 3rem;
+  box-shadow:1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inner_content{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  gap:50%;
+  margin:4rem 5rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.flex_item_1{
+flex-basis:10rem;
 }
 
-.App-link {
-  color: #61dafb;
+
+.sec1{
+  display:flex;
+  gap:5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sec1 div p{
+  margin-bottom:1rem;
+  font-size:1rem;
+  font-weight:bold;
+  letter-spacing:0.3rem;
+  color:#868e96;
+}
+
+input{
+  width:13rem;
+  height:7rem;
+  border-radius:0.5rem 1rem 0.5rem 1rem;
+  border: 1px solid #dee2e6;
+  text-align:center;
+  color:#495057;
+  font-weight:bold;
+  font-size:2.5rem;
+  background:none;
+}
+
+.hr-line{
+  margin:5rem 0;
+  width:90%;
+  color:#dee2e6;
+}
+
+.hr-line2{
+  display:none;
+}
+
+button{
+  border-radius:50%;
+  background:#9775fa;
+  color:white;
+  border:none;
+  padding:1rem;
+
+}
+
+.sec2{
+  display:flex;
+  align-items:center;
+}
+
+.dashes{
+  color:#9775fa;
+  font-size:7rem;
+  font-weight:bold;
+  font-style:italic;
+}
+
+h1{
+  font-size:7rem;
+  font-weight:bold;
+  font-style:italic;
+}
+
+@media (min-width: 805px) and (max-width: 1110px) {
+  
+.main_container{
+  height:90%;
+  width:60%;
+}
+.sec1{
+  gap:1rem;
+}
+
+input{
+  width:10rem;
+  height:5rem;
+}
+  
+}
+
+@media (min-width:630px) and (max-width:804px){
+.main_container{
+  height:60%;
+  width:60%;
+}
+
+.sec1{
+  gap:1rem;
+}
+
+input{
+  width:8rem;
+  height:4rem;
+}
+
+.dashes{
+  font-size:5rem;
+}
+
+h1{
+  font-size:5rem;
+}
+}
+
+@media (min-width:400px) and (max-width:630px){
+
+.main_container{
+  height:55%;
+  width:80%;
+  top:35%;
+}
+.sec1{
+  gap:1rem;
+}
+
+input{
+  width:7rem;
+  height:4rem;
+}
+
+.dashes{
+  font-size:4rem;
+}
+
+h1{
+  font-size:4rem;
+}
+
+.hr-line{
+  width:50%;
+}
+.hr-line2{
+  display:block;
+  width:50%;
+  color:#dee2e6;
+}
+
+button{
+  padding:0.5rem;
+}
+}
+
+@media (min-width:320px) and (max-width:400px){
+.main_container{
+  top:35%;
+  height:65%;
+  width:90%;
+  border-radius:2rem 2rem 10rem 2rem;
+}
+
+.inner_content{
+  margin:4rem 5rem;
+}
+.sec1{
+  gap:1rem;
+}
+
+input{
+  width:7rem;
+  height:3.5rem;
+}
+
+.dashes{
+  font-size:5rem;
+}
+
+h1{
+  font-size:5rem;
+}
+.hr-line{
+  width:50%;
+}
+.hr-line2{
+  display:block;
+  width:50%;
+  color:#dee2e6;
+}
+
+button{
+  padding:0.5rem;
+}
+
+}
+
+@media  (max-width:319px){
+.main_container{
+  top:35%;
+  height:68%;
+  width:90%;
+  border-radius:2rem 2rem 10rem 2rem;
+}
+
+.inner_content{
+  margin:3rem 1rem;
+}
+.sec1{
+  gap:1rem;
+}
+
+input{
+  width:7rem;
+  height:3.5rem;
+}
+
+.dashes{
+  font-size:5rem;
+}
+
+h1{
+  font-size:5rem;
+}
+.hr-line{
+  width:50%;
+}
+.hr-line2{
+  display:block;
+  width:50%;
+  color:#dee2e6;
+}
+
+button{
+  padding:0.5rem;
+}
+
 }
